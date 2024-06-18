@@ -343,10 +343,45 @@ Hanne Oberman
 </div>
 
 </section>
-<section id="section" class="slide level2 inverse center-h center larger175">
+<section id="section" class="slide level2 center-h larger200">
+<h2></h2>
+<p><a href="https://rainbowr.org/useR-2024">rainbowr.org/useR-2024</a></p>
+
+<img data-src="images/slides_qrcode.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="section-1" class="slide level2 inverse center-h center larger175">
 <h2></h2>
 <p>Our mission is to <span class="red">support</span>, <span class="orange">promote</span> and <span class="yellow">connect</span> <span class="green">LGBTQ+</span> people in the <span class="blue">R community</span> and to and spread awareness of LGBTQ+ issues through <span class="pink">data-driven activism</span></p>
-<div class="quarto-auto-generated-content">
+</section>
+<section id="meet-ups" class="slide level2">
+<h2>Meet-ups</h2>
+<p>Third Wednesday of the month, 5pm UK time (usually)</p>
+
+<img data-src="images/rainbowR-july-meetup.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="buddies" class="slide level2">
+<h2>Buddies</h2>
+</section>
+<section id="book-club" class="slide level2">
+<h2>Book Club</h2>
+</section>
+<section id="get-involved" class="slide level2">
+<h2>Get involved</h2>
+<ul>
+<li><p>Sign-up: <a href="https://rainbowr.org/join">rainbowr.org/join</a></p>
+<ul>
+<li>Welcome email</li>
+<li>Invitation to Slack</li>
+<li>Newsletter</li>
+</ul></li>
+<li><p>Mastodon: <a href="https://tech.lgbt/@rainbowR">tech.lgbt/<span class="citation" data-cites="rainbowR">@rainbowR</span></a></p></li>
+<li><p><a href="mailto:hello@rainbowr.org">hello@rainbowr.org</a></p></li>
+<li><p>Lunch tomorrow!</p></li>
+</ul>
+</section>
+<section id="section-2" class="slide level2 center-h larger250">
+<h2></h2>
+<p><a href="https://rainbowr.org">rainbowr.org</a></p>
+
+<img data-src="images/rainbowr_qrcode.svg" class="quarto-figure quarto-figure-center r-stretch"><div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
@@ -562,6 +597,44 @@ Hanne Oberman
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
