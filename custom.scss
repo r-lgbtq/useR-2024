@@ -1,0 +1,130 @@
+/*-- scss:defaults --*/
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap');
+
+$font-family-sans-serif: Figtree, Helvetica, sans-serif;
+$headings-font-family: Figtree, Helvetica, sans-serif;
+
+// colors
+$red: #FF4239;
+$orange: #FF6B00;
+$yellow: #FFC843;
+$green: #09CE7C;
+$blue: #02B3E3;
+$pink: #DA3AB3;
+$purple: #DA3AB3;
+$dark-blue: #001552;
+$white: #ffffff;
+
+$primary: $purple;
+$body-bg: $white;
+$link-color: $blue;
+
+// colour classes
+.red {
+  color: $red;
+}
+
+.orange {
+  color: $orange;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}
+
+.pink {
+  color: $pink;
+}
+
+// alignment and spacing
+.center-h {
+  text-align: center;
+}
+
+.right {
+  text-align: right;  
+}
+
+p {
+  padding-bottom: 12px;
+}
+
+// sizing
+
+.smaller90 {
+  font-size: 90%;
+}
+
+.larger150 {
+  font-size: 150%;
+}
+
+.larger175 {
+  font-size: 175%;
+}
+
+.larger200 {
+  font-size: 200%;
+}
+
+.larger250 {
+  font-size: 250%;
+}
+
+// icon-links
+.icon-link, div.quarto-about-jolla .about-link {
+    background-color: transparent;
+    color: $purple;
+    //border: 2px solid !important;
+    border: 2px solid;
+    border-color: $purple;
+    padding: 5px .4rem 5px .4rem !important;
+    margin-top: 4px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    border-radius: 5px; 
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icon-link:hover, div.quarto-about-jolla .about-link:hover{
+    background-color: $purple;
+    color: $body-bg;
+    border-color: $purple;
+    text-decoration: none;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+// inverse
+.inverse {
+  color: $white;
+
+  h1, h2, h3 {
+    color: $orange;
+  }
+  
+  .slide-background-content {
+    background-color: $dark-blue;
+  }
+  
+  a {
+    color: $blue;
+  }
+  
+  p code {
+    color: $yellow;
+  }
+}

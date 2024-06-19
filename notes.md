@@ -1,0 +1,1 @@
+Notes for planning this talk at <https://developer.r-project.org/etherpad/p/planning-lightning-talk>
