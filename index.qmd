@@ -6,6 +6,7 @@ author:
 format: 
   revealjs:
     theme: custom.scss
+    logo: images/rainbowR-hex.svg
 ---
 
 ```{r qrcodes}
@@ -23,9 +24,45 @@ Our mission is to [support]{.red}, [promote]{.orange} and [connect]{.yellow} [LG
 
 ## [Meet-ups]{.pink}
 
-Third Wednesday of the month, 5pm UK time *(usually)*
+::::: {.columns}
 
-![](images/rainbowR-july-meetup.svg){fig-align="center"}
+:::: {.column width="45%"}
+![](images/rainbowR-july-meetup.svg){fig-align="left"}
+:::: 
+
+:::: {.column width="55%"}
+Monthly recurring, usually:
+
+- the 3rd Wednesday 
+- at 4pm UTC
+
+::: {.fragment}
+
+Convert to your timezone using `lubridate`
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+library(lubridate)
+ymd_hms("2024-07-24 16:00:00") |> 
+  with_tz("Europe/Vienna")
+```
+
+:::
+
+:::: 
+
+:::::
+
+::: {.notes}
+rainbowR hosts a monthly meet-up for community members to 
+
+- Connect with each other
+- Stay updated on rainbowR developments
+- And to join in an informal 'show and tell', for example to showcase a project or R package they've been working on
+
+The meet-ups are held on the third Wednesday of each month at 4pm UTC.
+
+You can convert this time to your local timezone using the `lubridate` package in R. The next meet-up, on July 24th at 4pm UTC, will take place at 6pm here in Salzburg.
+:::
 
 ## [Buddies]{.orange}
 
@@ -36,7 +73,7 @@ Third Wednesday of the month, 5pm UK time *(usually)*
 - Opt-in via a sign-up form
 - Buddy pairs randomly assigned
 - Introduction emails sent to each pair
-- **googlesheets4**, **dplyr**, **blastula**
+- [**`googlesheets4`**, **`dplyr`**, **`blastula`**]{.black}
 - New round every three(ish) months
 - Next pairs September 1st
 :::
@@ -49,9 +86,10 @@ Third Wednesday of the month, 5pm UK time *(usually)*
 
 ## [tidyRainbow]{.red} 
 
-[github.com/r-lgbtq/tidyrainbow](https://github.com/r-lgbtq/tidyrainbow){.center-h .larger150}
 
 ![](images/tidyRainbow.svg){fig-align="center"}
+[github.com/r-lgbtq/tidyrainbow](https://github.com/r-lgbtq/tidyrainbow){.center-h .larger150}
+
 
 ## [Future plans]{.green}
 
