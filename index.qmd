@@ -156,10 +156,10 @@ You can convert this time to your local timezone using the `lubridate` package i
 
 
 
-## {.center-h .larger200}
+## {.center-h}
 
-[rainbowr.org](https://rainbowr.org)
+[rainbowr.org](https://rainbowr.org){.larger200}
 
-![](images/rainbowr_qrcode.svg){fig-align="center"}
+![](images/rainbowr_qrcode.svg)
 
-[rainbowr.org/useR-2024](https://rainbowr.org/useR-2024)
+[rainbowr.org/useR-2024](https://rainbowr.org/useR-2024){.larger150}
