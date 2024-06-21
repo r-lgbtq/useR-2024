@@ -38,7 +38,7 @@ Monthly recurring, usually:
 
 ::: {.fragment}
 
-Convert to your timezone using `lubridate`
+Convert to your timezone using **lubridate**
 
 ```{r, echo=TRUE, message=FALSE, warning=FALSE}
 library(lubridate)
@@ -53,6 +53,10 @@ ymd_hms("2024-07-24 16:00:00") |>
 :::::
 
 ::: {.notes}
+
+TODO: friendly and supportive, people show stuff they've never shown before, it's a safe space.
+
+
 rainbowR hosts a monthly meet-up for community members to 
 
 - Connect with each other
@@ -73,7 +77,7 @@ You can convert this time to your local timezone using the `lubridate` package i
 - Opt-in via a sign-up form
 - Buddy pairs randomly assigned
 - Introduction emails sent to each pair
-- [**`googlesheets4`**, **`dplyr`**, **`blastula`**]{.black}
+- [**googlesheets4**, **dplyr**, **blastula**]{.black}
 - New round every three(ish) months
 - Next pairs September 1st
 :::
