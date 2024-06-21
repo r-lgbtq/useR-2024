@@ -26,19 +26,24 @@ Our mission is to [support]{.red}, [promote]{.orange} and [connect]{.yellow} [LG
 
 ::::: {.columns}
 
-:::: {.column width="45%"}
+:::: {.column width="40%"}
 ![](images/rainbowR-july-meetup.svg){fig-align="left"}
 :::: 
 
-:::: {.column width="55%"}
+:::: {.column width="60%"}
+
+::::: {.smaller80}
 Monthly recurring, usually:
 
 - the 3rd Wednesday 
-- at 4pm UTC
+- 4pm UTC (summer), 5pm UTC (winter)
+:::::
 
 ::: {.fragment}
 
+::::{.smaller80}
 Convert to your timezone using **lubridate**
+::::
 
 ```{r, echo=TRUE, message=FALSE, warning=FALSE}
 library(lubridate)
@@ -56,6 +61,7 @@ ymd_hms("2024-07-24 16:00:00") |>
 
 TODO: friendly and supportive, people show stuff they've never shown before, it's a safe space.
 
+UTC varies to make it equivalent to 5pm UK time
 
 rainbowR hosts a monthly meet-up for community members to 
 
