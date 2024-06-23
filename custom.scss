@@ -112,6 +112,11 @@ p {
   border-radius: 5px;
 }
 
+// title-slide
+#title-slide > h1 {
+  display: none;
+}
+
 // inverse
 .inverse {
   color: $white;

@@ -1,8 +1,8 @@
 ---
 title: "rainbowR"
-author: 
-  - name: "Ella Kaye"
-  - name: "Hanne Oberman"
+title-slide-attributes:
+  data-background-image: images/title-slide.svg
+  data-background-size: contain
 format: 
   revealjs:
     theme: custom.scss
