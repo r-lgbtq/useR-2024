@@ -18,32 +18,39 @@ $dark-blue: #001552;
 $white: #ffffff;
 
 $primary: $purple;
+$body-color: $dark-blue;
 $body-bg: $white;
 $link-color: $blue;
 
 // colour classes
 .red {
   color: $red;
+  font-weight: 700;
 }
 
 .orange {
   color: $orange;
+  font-weight: 700;
 }
 
 .yellow {
   color: $yellow;
+  font-weight: 700;
 }
 
 .green {
   color: $green;
+  font-weight: 700;
 }
 
 .blue {
   color: $blue;
+  font-weight: 700;
 }
 
 .pink {
   color: $pink;
+  font-weight: 700;
 }
 
 // alignment and spacing
@@ -83,6 +90,10 @@ p {
 
 .larger250 {
   font-size: 250%;
+}
+
+.larger300 {
+  font-size: 300%;
 }
 
 // icon-links
