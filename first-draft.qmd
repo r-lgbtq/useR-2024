@@ -1,0 +1,165 @@
+---
+title: "rainbowR"
+title-slide-attributes:
+  data-background-image: images/title-slide.svg
+  data-background-size: contain
+format: 
+  revealjs:
+    theme: custom.scss
+    logo: images/rainbowR-hex.svg
+---
+
+```{r qrcodes}
+#| eval: false # just run once
+library(qrcode)
+slides_code <- qr_code("https://rainbowr.org/useR-2024")
+generate_svg(slides_code, "images/slides_qrcode.svg")
+rainbowr_code <- qr_code("https://rainbowr.org")
+generate_svg(rainbowr_code, "images/rainbowr_qrcode.svg")
+```
+
+## {.inverse .center-h .center .larger175}
+
+Our mission is to [support]{.red}, [promote]{.orange} and [connect]{.yellow} [LGBTQ+]{.green} people in the [R community]{.blue} and to and spread awareness of LGBTQ+ issues through [data-driven activism]{.pink}
+
+## [Meet-ups]{.pink}
+
+::::: {.columns}
+
+:::: {.column width="40%"}
+![](images/rainbowR-july-meetup.svg){fig-align="left"}
+:::: 
+
+:::: {.column width="60%"}
+
+::::: {.smaller80}
+Monthly recurring, usually:
+
+- the 3rd Wednesday 
+- 4pm UTC (summer), 5pm UTC (winter)
+:::::
+
+::: {.fragment}
+
+::::{.smaller80}
+Convert to your timezone using **lubridate**
+::::
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+library(lubridate)
+ymd_hms("2024-07-24 16:00:00") |> 
+  with_tz("Europe/Vienna")
+```
+
+:::
+
+:::: 
+
+:::::
+
+::: {.notes}
+
+TODO: friendly and supportive, people show stuff they've never shown before, it's a safe space.
+
+UTC varies to make it equivalent to 5pm UK time
+
+rainbowR hosts a monthly meet-up for community members to 
+
+- Connect with each other
+- Stay updated on rainbowR developments
+- And to join in an informal 'show and tell', for example to showcase a project or R package they've been working on
+
+The meet-ups are held on the third Wednesday of each month at 4pm UTC.
+
+You can convert this time to your local timezone using the `lubridate` package in R. The next meet-up, on July 24th at 4pm UTC, will take place at 6pm here in Salzburg.
+:::
+
+## [Buddies]{.orange}
+
+:::: {.columns}
+
+::: {.column width="60%" .smaller90}
+- Encourage deeper connections
+- Opt-in via a sign-up form
+- Buddy pairs randomly assigned
+- Introduction emails sent to each pair
+- [**googlesheets4**, **dplyr**, **blastula**]{.black}
+- New round every three(ish) months
+- Next pairs September 1st
+:::
+
+::: {.column width="40%"}
+![](images/rainbow-buddies.png){fig-align="center"}
+:::
+
+::::
+
+## [tidyRainbow]{.red} 
+
+
+![](images/tidyRainbow.svg){fig-align="center"}
+[github.com/r-lgbtq/tidyrainbow](https://github.com/r-lgbtq/tidyrainbow){.center-h .larger150}
+
+
+## [Future plans]{.green}
+
+:::: {.columns}
+
+::: {.column width="60%" .smaller90}
+### [Book Club]{.blue}
+- *Queer Data: Using Gender, Sex and Sexuality Data for Action*, Kevin Guyan
+- Will start in the autumn
+- Days/time TBD (will poll)
+
+### [Conference]{.pink}
+- Spring 2025
+- Need organising committee
+:::
+
+::: {.column width="40%"}
+![](images/queer-data.jpeg){fig-align="center"}
+:::
+
+::::
+
+
+
+## [Get (and stay) involved!]{.pink}
+
+:::: {.columns}
+
+::: {.column width="60%" .smaller90}
+- Join: [rainbowr.org/join](https://rainbowr.org/join)
+
+  - Welcome email
+  - Invitation to Slack
+    - #user-2024-salzburg
+  - Newsletter
+  
+- Mastodon: [tech.lgbt/@rainbowR](https://tech.lgbt/@rainbowR)
+
+- [hello@rainbowr.org](mailto:hello@rainbowr.org)
+
+- Lunch tomorrow!
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="35%"}
+![](images/rainbowR-hex.svg)
+:::
+
+::::
+
+
+
+## {.center-h}
+
+[rainbowr.org](https://rainbowr.org){.larger200}
+
+![](images/rainbowr_qrcode.svg)
+
+[rainbowr.org/useR-2024](https://rainbowr.org/useR-2024){.larger150}
