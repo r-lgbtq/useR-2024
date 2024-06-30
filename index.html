@@ -8,7 +8,7 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.549">
+  <meta name="generator" content="quarto-1.4.533">
 
   <title>rainbowR</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,71 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -400,38 +335,14 @@
 <h2></h2>
 <p>Our mission is to <span class="red">support</span>, <span class="orange">promote</span> and <span class="yellow">connect</span> <span class="green">LGBTQ+</span> people in the <span class="blue">R community</span> and to and spread awareness of LGBTQ+ issues through <span class="pink">data-driven activism</span></p>
 </section>
-<section id="meet-ups" class="slide level2">
-<h2><span class="pink">Meet-ups</span></h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="images/rainbowR-july-meetup.svg" class="quarto-figure quarto-figure-left"></p>
-</figure>
-</div>
-</div><div class="column" style="width:60%;">
-<div class="smaller80">
-<p>Monthly recurring, usually:</p>
-<ul>
-<li>the 3rd Wednesday</li>
-<li>4pm UTC (summer), 5pm UTC (winter)</li>
-</ul>
-</div>
-<div class="fragment">
-<div class="smaller80">
-<p>Convert to your timezone using <strong>lubridate</strong></p>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">library</span>(lubridate)</span>
-<span id="cb1-2"><a href=""></a><span class="fu">ymd_hms</span>(<span class="st">"2024-07-24 16:00:00"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb1-3"><a href=""></a>  <span class="fu">with_tz</span>(<span class="st">"Europe/Vienna"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "2024-07-24 18:00:00 CEST"</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
+<section id="section-1" class="slide level2 inverse center center-h larger200">
+<h2></h2>
+<p>We <span class="yellow">exist</span></p>
+<p>(Some of) what we <span class="green">do</span></p>
+<p>How to <span class="orange">get involved</span></p>
+</section>
+<section id="section-2" class="slide level2" data-background-image="images/rainbowR-july-meetup.svg" data-background-size="contain">
+<h2></h2>
 <aside class="notes">
 <p>TODO: friendly and supportive, people show stuff they’ve never shown before, it’s a safe space.</p>
 <p>UTC varies to make it equivalent to 5pm UK time</p>
@@ -455,10 +366,11 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="buddies" class="slide level2">
-<h2><span class="orange">Buddies</span></h2>
-<div class="columns">
-<div class="column smaller90" style="width:60%;">
+<section id="section-3" class="slide level2 center center-h larger175">
+<h2></h2>
+<p>Encourage deeper <span class="red">connections</span> with <span class="blue">randomly</span> assigned <span class="pink">buddy</span></p>
+
+<img data-src="images/rainbow-buddies.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
 <ul>
 <li>Encourage deeper connections</li>
 <li>Opt-in via a sign-up form</li>
@@ -468,81 +380,57 @@
 <li>New round every three(ish) months</li>
 <li>Next pairs September 1st</li>
 </ul>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/rainbow-buddies.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="tidyrainbow" class="slide level2">
-<h2><span class="red">tidyRainbow</span></h2>
-<p><img data-src="images/tidyRainbow.svg" class="quarto-figure quarto-figure-center"> <a href="https://github.com/r-lgbtq/tidyrainbow" class="center-h larger150">github.com/r-lgbtq/tidyrainbow</a></p>
-</section>
-<section id="future-plans" class="slide level2">
-<h2><span class="green">Future plans</span></h2>
-<div class="columns">
-<div class="column smaller90" style="width:60%;">
-<h3 id="book-club"><span class="blue">Book Club</span></h3>
-<ul>
-<li><em>Queer Data: Using Gender, Sex and Sexuality Data for Action</em>, Kevin Guyan</li>
-<li>Will start in the autumn</li>
-<li>Days/time TBD (will poll)</li>
-</ul>
-<h3 id="conference"><span class="pink">Conference</span></h3>
-<ul>
-<li>Spring 2025</li>
-<li>Need organising committee</li>
-</ul>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/queer-data.jpeg" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="get-and-stay-involved" class="slide level2">
-<h2><span class="pink">Get (and stay) involved!</span></h2>
-<div class="columns">
-<div class="column smaller90" style="width:60%;">
-<ul>
-<li><p>Join: <a href="https://rainbowr.org/join">rainbowr.org/join</a></p>
-<ul>
-<li>Welcome email</li>
-<li>Invitation to Slack
-<ul>
-<li>#user-2024-salzburg</li>
-</ul></li>
-<li>Newsletter</li>
-</ul></li>
-<li><p>Mastodon: <a href="https://tech.lgbt/@rainbowR">tech.lgbt/<span class="citation" data-cites="rainbowR">@rainbowR</span></a></p></li>
-<li><p><a href="mailto:hello@rainbowr.org">hello@rainbowr.org</a></p></li>
-<li><p>Lunch tomorrow!</p></li>
-</ul>
-</div><div class="column" style="width:5%;">
-
-</div><div class="column" style="width:35%;">
-<p><img data-src="images/rainbowR-hex.svg"></p>
-</div>
-</div>
-</section>
-<section id="section-1" class="slide level2 center-h">
+<section id="section-4" class="slide level2 center-h">
 <h2></h2>
-<p><a href="https://rainbowr.org" class="larger200">rainbowr.org</a></p>
-<p><img data-src="images/rainbowr_qrcode.svg"></p>
-<p><a href="https://rainbowr.org/useR-2024" class="larger150">rainbowr.org/useR-2024</a></p>
-<div class="quarto-auto-generated-content">
-<p><img src="images/rainbowR-hex.svg" class="slide-logo"></p>
+<p><img data-src="images/tidyRainbow.svg" class="quarto-figure quarto-figure-center"> <a href="https://github.com/r-lgbtq/tidyrainbow" class="larger150"><strong>github.com/r-lgbtq/tidyrainbow</strong></a></p>
+</section>
+<section id="section-5" class="slide level2" data-background-image="images/queer-data.jpeg" data-background-size="contain">
+<h2></h2>
+</section>
+<section id="section-6" class="slide level2 inverse center center-h larger200">
+<h2></h2>
+<p><span class="yellow">rainbowr.org/join</span></p>
+<p>email, Slack, newsletter</p>
+<p><span class="green">tech.lgbt/<span class="citation" data-cites="rainbowR">@rainbowR</span></span></p>
+<p><span class="orange">hello@rainbowr.org</span></p>
+<p>Lunch and social tomorrow!</p>
+<aside class="notes">
+<p>#user-2024-salzburg channel</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-7" class="slide level2 center-h inverse">
+<h2></h2>
+<p><span class="larger250 yellow">rainbowr.org</span></p>
+
+
+<img data-src="images/rainbowR-hex.svg" class="r-stretch"></section>
+    <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
-</div>
-</section>
-    </div>
+</div></div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
