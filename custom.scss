@@ -15,10 +15,11 @@ $blue: #02B3E3;
 $pink: #DA3AB3;
 $purple: #DA3AB3;
 $dark-blue: #001552;
+$very-dark-blue: #000B29;
 $white: #ffffff;
 
 $primary: $purple;
-$body-color: $dark-blue;
+$body-color: $very-dark-blue;
 $body-bg: $white;
 $link-color: $blue;
 
@@ -137,7 +138,7 @@ p {
   }
   
   .slide-background-content {
-    background-color: $dark-blue;
+    background-color: $very-dark-blue;
   }
   
   a {
