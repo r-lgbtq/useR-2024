@@ -19,7 +19,7 @@ generate_svg(rainbowr_code, "images/rainbowr_qrcode.svg")
 
 ## {.inverse .center-h .center .larger175}
 
-Our mission is to [support]{.red}, [promote]{.orange} and [connect]{.yellow} [LGBTQ+]{.green} people in the [R community]{.blue} and to and spread awareness of LGBTQ+ issues through [data-driven activism]{.pink}
+Our mission is to [support]{.red}, [promote]{.orange} and [connect]{.yellow} [LGBTQ+]{.green} people in the [R community]{.blue} and to spread awareness of LGBTQ+ issues through [data-driven activism]{.pink}
 
 ## {.inverse .center .center-h .larger200}
 
