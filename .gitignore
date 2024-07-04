@@ -2,6 +2,8 @@
 .Rproj.user/
 *.Rproj
 .Rhistory
+.vdoc.r
+settings.json
 
 # quarto files
 index.html
