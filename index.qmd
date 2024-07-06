@@ -1,5 +1,6 @@
 ---
 title: "rainbowR"
+image: "https://rainbowr.org/images/rainbowR-hex-square.png"
 title-slide-attributes:
   data-background-image: images/title-slide.svg
   data-background-size: contain
