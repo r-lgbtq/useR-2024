@@ -1,12 +1,15 @@
 ---
 title: "rainbowR"
-image: "https://rainbowr.org/images/rainbowR-hex-square.png"
+image: images/rainbowR-hex-square.png
 title-slide-attributes:
   data-background-image: images/title-slide.svg
   data-background-size: contain
 format: 
   revealjs:
     theme: custom.scss
+include-in-header:
+  - text: |
+      <link rel = "shortcut icon" href = "images/rainbow-hex-square.png" />
 ---
 
 ```{r qrcodes}
