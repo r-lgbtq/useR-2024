@@ -15,6 +15,7 @@ format:
 
 ```{r meta}
 #| include: false
+#| eval: false # only run code block locally, don't render 
 library(metathis)
 meta() |> 
   meta_name("github-repo" = "https://github.com/r-lgbtq/useR-2024") |> 
