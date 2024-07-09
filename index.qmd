@@ -23,9 +23,10 @@ meta() |>
   meta_social(
     title = "rainbowR: A community that supports, connects and promotes LGBTQ+ people who code in R",
     url = "https://rainbowr.org/user-2024",
-    image = "https://raw.githubusercontent.com/r-lgbtq/rainbowr.org/main/images/rainbowR-hex.png",
+    #image = "https://raw.githubusercontent.com/r-lgbtq/rainbowr.org/main/images/rainbowR-hex.png",
+    image = "https://rainbowr.org/images/rainbowR-hex-square.png",
     image_alt = "rainbowR hex sticker",
-    og_type = "slides",
+    #og_type = "slides",
     og_author = c("Ella Kaye", "Hanne Oberman"),
   ) |> 
   format() |> 
