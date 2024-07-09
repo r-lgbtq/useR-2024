@@ -7,10 +7,29 @@ title-slide-attributes:
 format: 
   revealjs:
     theme: custom.scss
-include-in-header:
-  - text: |
-      <link rel = "shortcut icon" href = "images/rainbow-hex-square.png" />
+    include-in-header:
+      - meta.html
+      - text: |
+          <link rel = "shortcut icon" href = "images/rainbow-hex-square.png" />
 ---
+
+```{r meta}
+#| include: false
+library(metathis)
+meta() |> 
+  meta_name("github-repo" = "https://github.com/r-lgbtq/useR-2024") |> 
+  meta_description("Slides for a lightning talk about rainbowR")
+  meta_social(
+    title = "rainbowR: A community that supports, connects and promotes LGBTQ+ people who code in R",
+    url = "https://rainbowr.org/user-2024",
+    image = "images/rainbowR-hex-square.png",
+    image_alt = "rainbowR hex sticker",
+    og_type = "slides",
+    og_author = c("Ella Kaye", "Hanne Oberman"),
+  ) |> 
+  format() |> 
+  writeLines("meta.html")
+```
 
 ```{r qrcodes}
 #| eval: false # just run once
